@@ -11,7 +11,7 @@ const SearchInput = ({setSearchProduct}) => {
     return (
         <form className='search-form' action="" onSubmit={handleSearch}>
             <input type="text" id='nameProduct' placeholder='Search Product' />
-            <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            <button><i className="fa-sharp fa-solid fa-magnifying-glass"></i></button>
         </form>
     )
 }

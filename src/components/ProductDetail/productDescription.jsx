@@ -25,7 +25,7 @@ const ProductDescription = ({productInfo}) => {
                 </div>
             </article>
         </div>
-
+        <button className='product-info__btn-cart'>Add to cart </button>
     </section>
   )
 }
