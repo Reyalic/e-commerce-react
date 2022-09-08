@@ -36,16 +36,8 @@ const LoginForm = ({setIsLogged}) => {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <form onSubmit={handleSubmit(submit)} className="login__form">
-        <ul className="login__test">
-          <li>
-            <b>Email: </b>mason@gmail.com
-          </li>
-          <li>
-            <b>Password: </b>mason1234
-          </li>
-        </ul>
         <h2>Enter your email and password</h2>
         <ul className="login-list">
           <li className="login-item">
@@ -74,7 +66,7 @@ const LoginForm = ({setIsLogged}) => {
         <div>{loginError && "Invalid email or password, try again..."}</div>
         <button>Login</button>
       </form>
-      <button><NavLink className={({ isActive }) => (isActive ? "active-link" : "")} to="/signup">Create an account</NavLink>
+      <button className="link-button"><NavLink className={({ isActive }) => (isActive ? "active-link" : "")} to="/signup">Create an account</NavLink>
       </button>
     </div>
   );

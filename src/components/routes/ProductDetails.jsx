@@ -21,7 +21,7 @@ const ProducDetail = () => {
   console.log(productInfo)
 
   return (
-    <div>
+    <div className='content'>
     <ProductDescription key={productInfo?.id} productInfo={productInfo} />
     <hr></hr>
     <SimilarProducts key={productInfo?.id} productInfo={productInfo} />
